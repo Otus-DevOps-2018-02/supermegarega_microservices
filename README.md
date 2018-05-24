@@ -57,4 +57,3 @@ supermegarega microservices repository
 - Добавлены тесты в pipeline для приложения reddit
 - Протестирована работа CI/CD Pipeline
 - Настроена интеграция Pipeline с Slack чатом
-
