@@ -15,7 +15,7 @@ supermegarega microservices repository
 - Создан новый проект docker в GCP
 - Настроена docker-machine
 - Создан docker образ smrdevops/otus-reddit
-- Создана учетная запись на https://hub.docker.com/ 
+- Создана учетная запись на https://hub.docker.com/
 - Образ otus-reddit загружен в hub.docker.com
 - Протестирована работа образа otus-reddit в docker-host и локально
 - Реализовано:
@@ -57,3 +57,14 @@ supermegarega microservices repository
 - Добавлены тесты в pipeline для приложения reddit
 - Протестирована работа CI/CD Pipeline
 - Настроена интеграция Pipeline с Slack чатом
+
+# homework-18 Устройство Gitlab CI. Непрерывная поставка
+
+- Создан новый проект  в Gitlab Ci example2
+- Для проекта example2 включен runner
+- В pipeline описаны окружения Dev, Staging, Production
+- Реализована возможность ручного запуска отдельных задач путём использования директивы when со значением manual
+- Добавлена директива only с помощью которой указали условия при которых при пуше ветки в репозиторий должен проставляться git tag чтобы задача выполнялась.
+- Простетирована работа Dynamic Environment
+- Создана конфигурация "При пуше новой ветки сервер с возможностью удаления кнопкой"
+- Создана конфигурация "При пуше собирается контейнер с reddit и деплоится на созданный для ветки сервер"
