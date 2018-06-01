@@ -3,7 +3,7 @@ FROM alpine:3.7
 ENV POST_DATABASE_HOST post_db
 ENV POST_DATABASE posts
 
-RUN apk add --no-cache python3
+RUN apk add --no-cache python3 python3-dev gcc musl-dev
 
 WORKDIR /app
 COPY . /app

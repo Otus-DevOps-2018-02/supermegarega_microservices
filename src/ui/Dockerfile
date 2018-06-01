@@ -9,7 +9,7 @@ ENV COMMENT_SERVICE_PORT 9292
 WORKDIR $APP_HOME
 COPY . $APP_HOME
 
-RUN apk add --no-cache gcc g++ make ruby-bundler ruby-dev && bundle install
+RUN apk add --no-cache gcc g++ make ruby-bundler ruby-dev ruby-json && bundle install
 
 CMD ["puma"]
 
