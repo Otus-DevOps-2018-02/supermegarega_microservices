@@ -33,9 +33,6 @@ services:
       back_net:
         aliases:
           - node-exporter
-      front_net:
-        aliases:
-          - node-exporter
 
   mongodb-exporter:
     image: mirantisworkloads/mongodb-prometheus-exporter:1.0.0
@@ -49,10 +46,7 @@ services:
       back_net:
         aliases:
           - mongodb-exporter
-      front_net:
-        aliases:
-          - mongodb-exporter
-
+      
   blackbox-exporter:
     image: prom/blackbox-exporter:v0.12.0
     ports:
@@ -101,7 +95,14 @@ services:
       - '--config.file=/etc/alertmanager/config.yml'
     ports:
       - 9093:9093
-
+    networks:
+      back_net:
+        aliases:
+          - alertmanager
+      front_net:
+        aliases:
+          - alertmanager
+          
 volumes:
   prometheus_data:
   grafana_data:
