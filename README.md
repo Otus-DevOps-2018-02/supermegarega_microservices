@@ -127,3 +127,13 @@ supermegarega microservices repository
 - Развернут Kubernetes-кластер в GKE с использованием gcloud console
 - Запущен reddit в Kubernetes
 - Развернут Kubernetes-кластер в GKE с использованием terraform
+
+# homework-24 Kubernetes. Networks ,Storages
+
+- Протестировали работу Kube-dns
+- Изучили сервисы ClusterIP, NodePort, LoadBalancer и настроили для reddit
+- Включен Ingress controller и настроена балансировка на L7-уровне
+- Настроен Ingress TLS Termination на работу только по HTTPS
+- Создан манифест ui-secret.yml для работы по HTTPS
+- Разграничен доступ к сервисам с использованием NetworkPolicy
+- Настроены разные хранилища для MongoDB (emptyDir,PersistentVolume,PersistentVolumeClaim,StorageClass)
