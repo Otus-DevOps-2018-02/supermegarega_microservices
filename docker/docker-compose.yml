@@ -13,12 +13,24 @@ services:
     image: ${USER_NAME}/ui:${UI_VERSION}
     ports:
       - ${UI_SERVICE_HOST_PORT}:${UI_SERVICE_CON_PORT}/tcp
+    depends_on:
+      - post
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: localhost:24224
+        tag: service.ui
     networks:
       front_net:
         aliases:
           - ui
   post:
     image: ${USER_NAME}/post:${POST_VERSION}
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: localhost:24224
+        tag: service.post
     networks:
       back_net:
         aliases:
