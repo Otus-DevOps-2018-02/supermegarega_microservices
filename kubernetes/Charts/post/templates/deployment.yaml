@@ -2,7 +2,7 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: {{ .Release.Name }}-{{ .Chart.Name }}
+  name: {{ template "post.fullname" . }}
   labels:
     app: reddit
     component: post
@@ -29,7 +29,7 @@ spec:
         - containerPort: {{ .Values.service.internalPort }}
           name: post
           protocol: TCP
-       env:
+        env:
         - name: POST_DATABASE_HOST
           value: {{ .Values.databaseHost | default (printf "%s-mongodb" .Release.Name) }}
 
