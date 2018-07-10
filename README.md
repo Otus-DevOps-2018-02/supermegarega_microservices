@@ -116,3 +116,24 @@ supermegarega microservices repository
  https://github.com/kelseyhightower/kubernetes-the-hard-way
 - Развернуты приложения ui, post, comment, mongo
 - Описан вариант установки и удаления Kubernetes The Hard way с помощью Ansible-плейбуков kubernetes/ansible
+
+# homework-23 Kubernetes. Запуск кластера и приложения. Модель безопасности.
+
+- Развернуто локальное окружение для работы с Kubernetes с помощью minikube
+- Созданы YAML-манифесты для запуска сервисов в Kubernetes
+- Ознакомились с работой Service в Kubernetes
+- Ознакомились с Dashboard Kubernetes
+- Ознакомились с Namespace Kubernetes
+- Развернут Kubernetes-кластер в GKE с использованием gcloud console
+- Запущен reddit в Kubernetes
+- Развернут Kubernetes-кластер в GKE с использованием terraform
+
+# homework-24 Kubernetes. Networks ,Storages
+
+- Протестировали работу Kube-dns
+- Изучили сервисы ClusterIP, NodePort, LoadBalancer и настроили для reddit
+- Включен Ingress controller и настроена балансировка на L7-уровне
+- Настроен Ingress TLS Termination на работу только по HTTPS
+- Создан манифест ui-secret.yml для работы по HTTPS
+- Разграничен доступ к сервисам с использованием NetworkPolicy
+- Настроены разные хранилища для MongoDB (emptyDir,PersistentVolume,PersistentVolumeClaim,StorageClass)
