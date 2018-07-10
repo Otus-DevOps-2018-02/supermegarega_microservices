@@ -118,7 +118,7 @@ supermegarega microservices repository
 - Описан вариант установки и удаления Kubernetes The Hard way с помощью Ansible-плейбуков kubernetes/ansible
 
 # homework-23 Kubernetes. Запуск кластера и приложения. Модель безопасности.
- 
+
 - Развернуто локальное окружение для работы с Kubernetes с помощью minikube
 - Созданы YAML-манифесты для запуска сервисов в Kubernetes
 - Ознакомились с работой Service в Kubernetes
