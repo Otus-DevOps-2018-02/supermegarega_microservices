@@ -9,4 +9,6 @@ variables.json
 docker-0f0b9a439240.json
 *.env
 gcp.json
+docker-2b047605bcc7.json
+*.env.gce
 

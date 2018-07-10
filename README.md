@@ -108,3 +108,11 @@ supermegarega microservices repository
 - Настроен Zipkin для распределенного трейсинга
 - Созданы образы из репозитория со сломанным кодом https://github.com/Artemmkin/bugged-code
 - Проведен анализ странной работы приложения с помощью Zipkin (описание отправлено в Slack @sbogatyrets)
+
+# homework-22 Введение в Kubernetes
+
+- Созданы manifest-ы для приложений ui, post, comment, mongo в kubernetes/reddit
+- Пройден туториал Kubernetes The Hard way от Kelsey Hightower
+ https://github.com/kelseyhightower/kubernetes-the-hard-way
+- Развернуты приложения ui, post, comment, mongo
+- Описан вариант установки и удаления Kubernetes The Hard way с помощью Ansible-плейбуков kubernetes/ansible
