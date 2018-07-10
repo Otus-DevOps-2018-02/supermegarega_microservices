@@ -137,3 +137,12 @@ supermegarega microservices repository
 - Создан манифест ui-secret.yml для работы по HTTPS
 - Разграничен доступ к сервисам с использованием NetworkPolicy
 - Настроены разные хранилища для MongoDB (emptyDir,PersistentVolume,PersistentVolumeClaim,StorageClass)
+
+# homework-25 CI/CD в Kubernetes
+
+- Установлен и настроен Helm и Tiller
+- Созданы и установлены Charts для приложений comment, post, ui
+- Создан и установлен Chart для reddit
+- Установлен и настроен Gitlab с помощью Helm
+- Созданы группа и проекты post, ui, comment, reddit-deploy
+- Протестирована работа Pipelines
