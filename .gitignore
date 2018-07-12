@@ -11,4 +11,5 @@ docker-0f0b9a439240.json
 gcp.json
 docker-2b047605bcc7.json
 *.env.gce
+the_hard_way/
 
